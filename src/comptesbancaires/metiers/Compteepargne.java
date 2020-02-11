@@ -1,7 +1,12 @@
 package comptesbancaires.metiers;
 
-public class Compteepargne {
+public class Compteepargne extends Compte{
 
-	private int tauxdinteret;
+	public Compteepargne(int id, int solde, String datecreation) {
+		super(id, solde, datecreation);
+		// TODO Auto-generated constructor stub
+	}
+
+	private double tauxdinteret;
 
 }
