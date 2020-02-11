@@ -1,7 +1,12 @@
 package comptesbancaires.metiers;
 
-public class Comptecourant {
+public class Comptecourant extends Compte {
 
-	private int decouvert;
+	public Comptecourant(int id, int solde, String datecreation) {
+		super(id, solde, datecreation);
+		// TODO Auto-generated constructor stub
+	}
+
+	private double decouvert;
 
 }

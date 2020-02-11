@@ -3,19 +3,21 @@ package comptesbancaires.metiers;
 public class Compte {
 
 	private int id;
-	private int solde;
+	private double solde;
 	private String datecreation;
 	private static int compteurId = 0;
 	
 	
 	
-	public Compte(int solde, String datecreation) {
+	
+
+	public Compte(int id, int solde, String datecreation) {
 		super();
-		
-		this id = compteurId++;
-		this solde = solde;
-		this datecreation = datecreation;
+		this.id = id;
+		this.solde = solde;
+		this.datecreation = datecreation;
 	}
+
 
 	@Override
 	public String toString() {
@@ -35,7 +37,7 @@ public class Compte {
 
 
 
-	public int getSolde() {
+	public double getSolde() {
 		return solde;
 	}
 
